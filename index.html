@@ -2,10 +2,41 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hallo Welt!</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      padding: 24px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f4f4f5;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 0;
+      color: #1a1a1a;
+    }
+
+    audio {
+      width: 100%;
+      max-width: 400px;
+    }
+  </style>
 </head>
 <body>
   <p>Hallo Welt</p>
-  <audio controls source src="helloinge.mp3" type="audio/mpeg></audio>
+  <audio controls src="/root/helloinge.mp3"></audio>
 </body>
 </html>
